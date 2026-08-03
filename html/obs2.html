@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANITS - College Information Portal</title>
+</head>
+<body>
+
+    <!-- PART D: HTML5 Semantic Header -->
+ <header>
+    <table width="100%">
+      <tr>
+      <td width="120">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/47/Anits_logo.jpg" alt="ANITS College Logo" width="200" >
+      </td>
+
+     <td>
+     <h1 align ="center">ANIL NEERUKONDA INSTITUTE OF TECHNOLOGY & SCIENCES</h1>
+      <h3 align = "center">(AUTONOMOUS)</h3>
+                      <p align="center"><em>Autonomous Institution | Accredited by NBA & NAAC with 'A+' Grade</em></p>
+                      <p align="center">Sangivalasa, Bheemunipatnam, Visakhapatnam, Andhra Pradesh</p>
+    </td>
+    </tr>
+    </table>
+     </header>
+
+    <!-- PART D: Navigation Bar -->
+    <nav  align="center">
+        <a  href="#about">About ANITS</a> |
+        <a  href="#academics">Academics</a> |
+        <a href="#students">Student Data</a> |
+        <a href="#register">Admission Registration</a> |
+        <a href="https://anits.edu.in" target="_blank">ANITS Official Website</a> |
+        <a href="https://www.google.com" target="_blank">Google Search</a>
+    </nav>
+
+    <hr>
+
+    <main>
+        <!-- PART A: Basic HTML & Text Formatting -->
+        <section id="about">
+            <h2 >About ANITS</h2>
+            <article>
+                <p>
+                    <strong>Anil Neerukonda Institute of Technology and Sciences (ANITS)</strong> was established in the academic year <i>2001-02</i> by the Anil Neerukonda Educational Society (ANES). 
+                    The college is permanently affiliated with <u>Andhra University</u> and approved by AICTE.
+                </p>
+            </article>
+        </section>
+
+        <!-- PART A: Lists & Hyperlinks -->
+        <section id="academics"> 
+            <h2 >Academic Overview</h2>
+            
+            <h3>Offered Departments </h3>
+            <ul>
+                <li>Computer Science & Engineering (CSE)</li>
+                <li>CSE (Artificial Intelligence & Machine Learning)</li>
+                <li>Electronics & Communication Engineering (ECE)</li>
+                <li>Electrical & Electronics Engineering (EEE)</li>
+                <li>Information Technology (IT)</li>
+                <li>Mechanical Engineering</li>
+            </ul>
+            <h3>EAPCET / APICET Admission Steps </h3>
+            <ol>
+                <li>Qualify in the AP EAPCET / ICET entrance examination.</li>
+                <li>Register for web counseling and select <strong>ANIL</strong> as college code.</li>
+                <li>Certificate verification at designated helpline centers.</li>
+                <li>Report to ANITS campus upon seat allotment and complete fee payment.</li>
+            </ol>
+            <p>
+                To learn more about campus achievements, visit:
+                <a href="https://anits.edu.in" target="_blank">ANITS Official Portal</a>
+            </p>
+        </section>
+
+        <hr>
+
+        <!-- PART B: Tables and Images -->
+        <section id="students">
+            <h2>ANITS Top Rankers (Student Details)</h2>
+            
+            <table border="1" cellpadding="8" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Roll No</th>
+                        <th>Student Name</th>
+                        <th>Branch</th>
+                        <th>Email ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>321126510001</td>
+                        <td>K. Sitaram</td>
+                        <td>CSE</td>
+                        <td>sitaram.cse@anits.edu.in</td>
+                    </tr>
+                    <tr>
+                        <td>321126512015</td>
+                        <td>P. Sravani</td>
+                        <td>ECE</td>
+                        <td>sravani.ece@anits.edu.in</td>
+                    </tr>
+                    <tr>
+                        <td>321126520042</td>
+                        <td>V. Rahul</td>
+                        <td>IT</td>
+                        <td>rahul.it@anits.edu.in</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3>Campus Overview</h3>
+            <img src="https://via.placeholder.com/600x200?text=ANITS+Sangivalasa+Campus+Building" alt="ANITS Sangivalasa Campus Building" width="600">
+        </section>
+
+        <hr>
+
+        <!-- PART C & D: Forms & Modern HTML5 Input Types -->
+        <section id="register">
+            <h2>ANITS Admission Registration Form</h2>
+            <form action="#" method="post">
+                
+                <!-- Full Name -->
+                <p>
+                    <label for="fullname">Student Full Name:</label><br>
+                    <input type="text" id="fullname" name="fullname" placeholder="Enter full name" required>
+                </p>
+
+                <!-- PART D Input: Email -->
+                <p>
+                    <label for="email">Student Email ID:</label><br>
+                    <input type="email" id="email" name="email" placeholder="student@anits.edu.in" required>
+                </p>
+
+                <!-- Password -->
+                <p>
+                    <label for="password">Create Password:</label><br>
+                    <input type="password" id="password" name="password" required>
+                </p>
+
+                <!-- PART D Input: Date -->
+                <p>
+                    <label for="dob">Date of Birth:</label><br>
+                    <input type="date" id="dob" name="dob">
+                </p>
+
+                <!-- PART D Input: Number -->
+                <p>
+                    <label for="eapcet_rank">AP EAPCET Rank:</label><br>
+                    <input type="number" id="eapcet_rank" name="eapcet_rank" min="1" max="200000">
+                </p>
+
+                <!-- Gender (Radio Buttons) -->
+                <p>
+                    <label>Gender:</label><br>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+                </p>
+
+                <!-- Hobbies (Checkboxes) -->
+                <p>
+                    <label>Co-Curricular / Hobbies:</label><br>
+                    <input type="checkbox" id="coding" name="hobbies" value="Coding">
+                    <label for="coding">Coding Club</label>
+                    <input type="checkbox" id="robotics" name="hobbies" value="Robotics">
+                    <label for="robotics">e-Yantra Robotics</label>
+                    <input type="checkbox" id="sports" name="hobbies" value="Sports">
+                    <label for="sports">Sports & Athletics</label>
+                </p>
+
+                <!-- Branch (Dropdown) -->
+                <p>
+                    <label for="branch">Select Engineering Branch:</label><br>
+                    <select id="branch" name="branch">
+                        <option value="CSE">Computer Science & Engineering (CSE)</option>
+                        <option value="CSM">CSE (AI & ML)</option>
+                        <option value="ECE">Electronics & Communication (ECE)</option>
+                        <option value="EEE">Electrical & Electronics (EEE)</option>
+                        <option value="IT">Information Technology (IT)</option>
+                        <option value="MECH">Mechanical Engineering</option>
+                    </select>
+                </p>
+
+                <!-- PART D Input: Color -->
+                <p>
+                    <label for="fav_color">Preferred ID Card Theme Color:</label><br>
+                    <input type="color" id="fav_color" name="fav_color" value="#003366">
+                </p>
+
+                <!-- PART D Input: Range -->
+                <p>
+                    <label for="satisfaction">Self Assessment Rating (1 to 10):</label><br>
+                    <input type="range" id="satisfaction" name="satisfaction" min="1" max="10">
+                </p>
+
+                <!-- Comments (Textarea) -->
+                <p>
+                    <label for="comments">Additional Remarks / Address:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter address or questions..."></textarea>
+                </p>
+
+                <!-- Buttons -->
+                <p>
+                    <input type="submit" value="Submit Registration">
+                    <input type="reset" value="Reset Form">
+                </p>
+            </form>
+        </section>
+
+        <hr>
+
+        <!-- PART D: Audio & Video Elements -->
+        
+    </main>
+
+    <hr>
+            <!-- PART D: Audio & Video Elements -->
+        <section id="media">
+            <h2>Campus Media</h2>
+
+            <h3>ANITS College Anthem (Audio)</h3>
+            <audio controls>
+                <source src="college-anthem.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+
+            <br><br>
+
+            <h3>ANITS Campus Tour (Video)</h3>
+            <video width="600" controls>
+                <source src="campus-tour.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <hr>
+
+    <!-- PART D: Semantic Footer -->
+    <footer>
+        <p>&copy; 2026 Anil Neerukonda Institute of Technology & Sciences (ANITS). All Rights Reserved.</p>
+        <p>Contact: principal@anits.edu.in | Phone: 08933-225083</p>
+    </footer>
+
+</body>
+</html>
