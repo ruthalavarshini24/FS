@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #1e3a5f;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background-color: #222;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 20px;
+        }
+
+        nav a:hover {
+            color: yellow;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+        }
+
+        section {
+            background-color: white;
+            margin: 20px 0;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            color: #1e3a5f;
+        }
+
+        .courses {
+            display: flex;
+            gap: 20px;
+        }
+
+        .course {
+            background-color: #e8f0f8;
+            padding: 20px;
+            flex: 1;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .course:hover {
+            transform: scale(1.03);
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #1e3a5f;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #345f8c;
+        }
+
+        footer {
+            background-color: #1e3a5f;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>ANITS College</h1>
+        <p>Learning Today, Leading Tomorrow</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- Home -->
+        <section id="home">
+            <h2>Welcome</h2>
+            <p>
+                Welcome to the ANITS College website.
+                We provide quality education and encourage
+                students to develop technical and professional skills.
+            </p>
+        </section>
+
+        <!-- About -->
+        <section id="about">
+            <h2>About Us</h2>
+            <p>
+                Our college focuses on academic excellence, innovation,
+                teamwork and overall student development.
+            </p>
+
+            <ul>
+                <li>Experienced Faculty</li>
+                <li>Modern Laboratories</li>
+                <li>Library Facilities</li>
+                <li>Sports and Cultural Activities</li>
+            </ul>
+        </section>
+
+        <!-- Courses -->
+        <section id="courses">
+            <h2>Courses Offered</h2>
+
+            <div class="courses">
+
+                <div class="course">
+                    <h3>CSE</h3>
+                    <p>Computer Science and Engineering</p>
+                </div>
+
+                <div class="course">
+                    <h3>ECE</h3>
+                    <p>Electronics and Communication Engineering</p>
+                </div>
+
+                <div class="course">
+                    <h3>MECH</h3>
+                    <p>Mechanical Engineering</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+
+            <form>
+                <label>Name:</label>
+                <input type="text" placeholder="Enter your name">
+
+                <label>Email:</label>
+                <input type="email" placeholder="Enter your email">
+
+                <label>Branch:</label>
+                <select>
+                    <option>Select Branch</option>
+                    <option>CSE</option>
+                    <option>ECE</option>
+                    <option>MECH</option>
+                </select>
+
+                <label>Message:</label>
+                <textarea rows="4" placeholder="Enter your message"></textarea>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 ANITS College | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
