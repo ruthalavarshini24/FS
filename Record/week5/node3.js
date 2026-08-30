@@ -1,4 +1,3 @@
-// app.js
-const greet = require('./node2');
+import greet from './node2.js';
 
 console.log(greet("Alice"));
