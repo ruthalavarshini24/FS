@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Calculator</title>
+  <link rel="stylesheet" href="pbm.css">
+</head>
+<body>
+  <h2>Product Calculator</h2>
+
+  <label>
+    Product Name:
+    <input type="text" id="productName" placeholder="Enter product name">
+  </label>
+
+  <label>
+    Quantity:
+    <input type="number" id="quantity" value="1" min="1">
+  </label>
+
+  <label>
+    Price (per unit):
+    <input type="number" id="price" value="0" min="0">
+  </label>
+
+  <div id="total">Total Price: 0</div>
+
+  <script src="pbm.js"></script>
+</body>
+</html>
