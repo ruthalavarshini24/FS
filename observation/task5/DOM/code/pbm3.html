@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Example</title>
+</head>
+<body>
+  <!-- Original elements -->
+  <h1 id="title">Hello World!</h1>
+  <p id="paragraph">This is a paragraph.</p>
+  <img id="image" src="old.jpg" alt="Old Image" width="150">
+
+  <!-- Button to trigger changes -->
+  <button onclick="changeContent()">Click Me</button>
+
+  <script>
+    function changeContent() {
+      // Change content
+      document.getElementById("title").innerHTML = "DOM Manipulation in Action!";
+      document.getElementById("paragraph").innerHTML = "The content has been updated dynamically.";
+
+      // Change style
+      document.getElementById("paragraph").style.color = "blue";
+      document.getElementById("paragraph").style.fontSize = "20px";
+
+      // Change attributes
+      document.getElementById("image").setAttribute("src", "new.jpg");
+      document.getElementById("image").setAttribute("alt", "Updated Image");
+    }
+  </script>
+</body>
+</html>
